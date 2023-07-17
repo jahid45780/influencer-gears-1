@@ -93,15 +93,6 @@
 /* end popular styles */
 
 
-.exta-para{
-    position: relative;
-    left: 970px;
-    color: red;
-}
-
-/* end exta */
-
-
 .Featured{
     display: flex;
     gap: 40px;
@@ -123,7 +114,7 @@
 
 /* responsive moblie */
 @media screen and (max-width:576px) {
-    .menubar, .banner, .maun-img, .Featured, .Featured img 
+    .menubar, .banner, .maun-img, .Featured, .Featured img,.exta-para
     
     {
     flex-direction: column;
@@ -153,10 +144,18 @@
     margin-left: 100px;
     margin-bottom: 20px ;
     
-   }
+   }  
+}
+
+/* tablet responsive */
+
+@media screen and (min-width:576px) and (max-width:960px){
+
+   .popular-container{
+    grid-template-columns: repeat(2,1fr);
+}
 
 
-   
 
-   
+
 }
